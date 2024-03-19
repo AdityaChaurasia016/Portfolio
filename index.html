@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            background-color: rgb(0, 0, 79);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+          
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            gap: 200px;
+            background-color: rgb(84, 120, 164);
+            width: 100%;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 19px;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0px 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: lavender;
+            transition: 0.5s;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 23px 0;
+            margin: 200px 0;
+
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .leftSection {
+            /* background-color: red; */
+            font-size: 3rem;
+            margin: 55px 0px;
+        }
+
+        .rightSection {
+            /* background-color: red; */
+        }
+
+        .rightSection img {
+            width: 80%;
+        }
+
+        .purple {
+            color: blueviolet;
+        }
+
+        #element {
+            color: blueviolet;
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+
+        }
+
+        main hr {
+            background-color: aqua;
+            border: 0;
+            height: 1px;
+            margin: 40px 84px;
+        }
+
+        .h1 {
+            font-size: 3.0rem;
+            margin: 5rem 10rem;
+        }
+
+        .secondSection {
+            margin-top: 15vw;
+            margin-bottom: -350px;
+        }
+
+        .secondSection .box {
+            background-color: white;
+            width: 80vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+            justify-content: space-evenly;
+            /*This was added manually*/
+        }
+
+        .secondSection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 100px;
+        }
+
+        .image-top {
+            width: 130px;
+            /*Modified*/
+            position: relative;
+            top: -150px;
+            left: -62px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 1px;
+            width: 150px;
+            font-size: 30px;
+        }
+
+        /*Third Section*/
+        .thirdSection {
+            padding: 0 270px;
+        }
+
+        .para, .secondpara{
+            font-size: 2.3rem;
+            width:75%;
+            line-height: 1.8;
+        }
+        .thirdSection h1, .head{
+            font-size: 3rem;
+            margin-top:3.8rem;
+            margin-bottom: 6rem;
+        }
+        .gap{
+            height:10vh;
+        }
+
+
+        /*Fourth Section*/
+
+        .fourthSection{
+            padding:0px 8%;
+            width:auto;
+            height:40vw;
+            margin-bottom: -5rem;
+            /* background-color: aqua; */
+        }
+        .child{
+            /* background-color: antiquewhite; */
+            height:70%;
+            width:100%;
+            margin-top: -2%;  /*for dist between the child and the title*/
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            gap:10px;
+            padding:0 90px;
+        }
+
+        .project1{
+            width:35%;
+            height:65%;
+            background-color: rgb(65, 58, 58);
+            border:none;
+            border-radius: 2.56rem;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+        
+        .project2{
+            width:35%;
+            height:65%;
+            background-color: rgb(65, 58, 58);
+            border-radius: 2.57rem;
+            overflow: hidden;
+        }
+
+        .header{
+            height:70%;
+            /* background-color: rgb(255, 255, 255); */
+        }
+
+        .img1{
+            background-image: url('amazon.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .img2{
+            background-image: url('Netflix.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .footer{
+            padding:1rem;
+        }
+        .footer p{
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+
+        .shade{
+            height: 100%;
+            width:100%;
+        }
+
+        .shade:hover{
+            background: linear-gradient(rgba(159, 87, 87, 0.6),rgba(0,0,0, 0.7));
+            cursor: pointer;
+            transition: 0.9s;
+        }
+
+        .fifthSection{
+            width:80%;
+            height:44vw;
+            /* background-color: grey; */
+            margin:0 10rem;
+        }
+        
+        .flex{
+            display: flex;
+            
+        }
+
+        /* Form */
+
+        .container{
+            color:black;
+            display:flex;
+            /* width:0%; */
+            height:30vw;
+            /* background-color: #001660; */
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+        form{
+            background: white;
+            display:flex;
+            flex-direction: column;
+            padding:2vw 4vw;
+            width:90%;
+            border-radius: 1rem;
+            max-width:800px;
+            border: radius 10px ;
+        }
+
+        form h3{
+            color:#555;
+            font-weight:800;
+            margin-bottom:20px;
+        }
+
+        form input, form textarea{
+            border:0;
+            margin:10px 0;
+            padding:20px;
+            outline:none;
+            background: #f5f5f5;
+            font-size: 16px;;
+        }
+
+        form button{
+            padding:15px;
+            background:blueviolet;
+            color:white;
+            border:none;
+            font-size:20px;
+            outline:none;
+            cursor:pointer;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Aditya's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi! my name is <span class="purple">Aditya</span>
+                <div>and i am a passionate</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightSection">
+                <img src="photo.png" alt="photo">
+            </div>
+        </section>
+        <hr>
+
+        <section class="thirdSection">
+            <h1 >About me</h1>
+            <div class="para">
+                Welcome to my web development portfolio! My name is Aditya Chaurasia, and I am pursuing Bachelors of Technology(BTech)in
+                 Information Technology(IT) from CHRIST (Deemed To Be University).</div>
+                 <div class="gap"></div>
+            <div class="secondpara">
+                 I'm passionate about crafting innovative digital experiences through code. With a blend of creativity and technical expertise, I aim to specialize in creating responsive 
+                and user-friendly websites that leave a lasting impression.
+            </div>
+
+        </section>
+
+        <hr>
+        <h1 class="h1">My Skills</h1>
+        <section class="secondSection">
+
+
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="C.png" alt="">
+                    <div class="vertical-title">
+                        C
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="java.png" alt="">
+                    <div class="vertical-title">
+                        Java
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="python.png" alt="">
+                    <div class="vertical-title">
+                        Python
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="JS.png" alt="">
+                    <div class="vertical-title">
+                        JavaScript
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="html.png" alt="">
+                    <div class="vertical-title">
+                        HTML
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="CSS.png" alt="">
+                    <div class="vertical-title">
+                        CSS
+                    </div>
+                </div>
+
+
+            </div>
+
+        </section>
+<hr>
+        <section class="fourthSection">
+
+            <h1 class="head">My Projects</h1>
+            <div class="child">
+                <div class="project1" onclick="window.location.href='https://github.com/AdityaChaurasia016/amazon_clone'">
+                    <div class="shade">
+                    <div class="header img1"></div>
+
+                    <div class="footer">
+                    <p>Amazon Webpage Using HTML, and CSS</p>
+                    </div>
+                </div>
+                </div>
+                <div class="project2" onclick="window.location.href='https://github.com/AdityaChaurasia016/netflix_clone'">
+                    <div class="shade">
+                    <div class="header img2"></div>
+
+                    <div class="footer">
+                        <p>Netflix Webpage Using HTML, and CSS</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+        </section>
+
+        <hr>
+
+        <!-- Contact Form -->
+        <section class="fifthSection">
+                <h1 class="head">Contact Me<h1>
+            <div class="container">
+                <form onsubmit="sendEmail(); reset(); return false">
+                    <h3>GET IN TOUCH!!!</h3>
+                    <input type="text" id="name" placeholder="Your name" required>
+                    <input type="email" id="email" placeholder="Your email ID" required>
+                    <input type="text" id="phone" placeholder="Phone no." required>
+                    <textarea name="" id="message" cols="30" rows="4" placeholder="Hello!"></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </section>
+
+
+
+
+
+
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            Email.send({
+    Host : "smtp.gmail.com",
+    Username : "adityachaurasia0016@gmail.com",
+    Password : "password",
+    To : 'adityachaurasia0016@gmail.com',
+    From : document.getElementById("email").value,
+    Subject : "Neww Contact Form Enquiry",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
+        }
+    </script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer'],
+            typeSpeed: 50,
+        });
+
+    </script>
+</body>
+
+</html>
